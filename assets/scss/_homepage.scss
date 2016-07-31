@@ -42,30 +42,42 @@
   }
 
   .masthead {
-    text-align: center;
-    padding: 2em 0;
-    height: 90vh;
-    padding: 1.5em 0;
+    height: 95vh;
+    // in the future will scroll through images
+    background: url('../images/carousel/2.jpg');
+    background-size: cover;
+    background-position: top;
+
+    // All about dem sweet highlights.
+    h1,p {
+      background-color: $brand-primary;
+      display: inline;
+      line-height: normal;
+      margin: 0;
+      padding: 0.25rem 0.5rem;
+    }
 
     h1 {
-      font-size: 36px;
+      font-size: 2.6rem;
       font-weight: normal;
       margin: 0 0 .75em;
     }
 
     .intro {
       font-size: 1.25em;
+      line-height: 1.4em;
       color: rgba(white, .7);
     }
 
     .join-now {
-      font-size: 1.3125em;
+      font-size: 1.5em;
       font-weight: 700;
       text-transform: uppercase;
       display: inline-block;
       padding: 7px 20px;
       margin: 10px 0 50px;
       border-radius: 6px;
+      background-color: $brand-primary;
       color: white;
       text-decoration: none;
       border: 3px solid rgba(255,255,255,.4);
@@ -81,7 +93,8 @@
             padding: 3em 0;
 
             .intro {
-                font-size: 1.375em;
+                font-size: 1.75em;
+                line-height: normal;
             }
 
         }
@@ -116,8 +129,9 @@
       and (max-device-width: 1024px)
       and (-webkit-min-device-pixel-ratio: 1) {
         .masthead {
+            min-height: 50vh !important;
             height: auto;
-            padding: 10vh 0;
+            padding: 5vh 0;
         }
     }
 
