@@ -4,6 +4,7 @@ var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var cp = require('child_process');
+var os = require('os');
 
 var messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -14,7 +15,14 @@ var messages = {
  */
 gulp.task('jekyll-build', function(done) {
   browserSync.notify(messages.jekyllBuild);
-  return cp.spawn('bundle', 'exec jekyll build --config _config.yml,_config_dev.yml'.split(' '), {
+
+  /** Check if running Wandows */
+  var executable = 'bundle';
+  if (os.platform() == 'win32') {
+    executable = 'bundle.bat';
+  }
+
+  return cp.spawn(executable, 'exec jekyll build --config _config.yml,_config_dev.yml'.split(' '), {
     stdio: 'inherit'
   }).on('close', done);
 });
