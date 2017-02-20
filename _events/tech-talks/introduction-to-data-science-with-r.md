@@ -3,7 +3,7 @@ facebook_id: '1096814783797219'
 title: Introduction to Data Science with R
 start_time: '2017-02-22 18:00'
 end_time: '2017-02-22 20:00'
-location: TBC
+location: 'UCL, Malet Place Engineering Building, Thomson Reuters Lab'
 ---
 
 UCLU Data Science Society is teaming up with UCLU Tech Society to bring you a hands-on introduction to data science. At this taster session, we will be introducing you to the statistical programming language R, and walking you through a Kaggle challenge.  
