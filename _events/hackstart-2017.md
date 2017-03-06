@@ -1,8 +1,8 @@
 ---
 facebook_id: '934474233354680'
 title: HackStart 2017
-start_time: '2017-02-25 09:30'
-end_time: '2017-02-25 17:00'
+start_time: '2017-04-08 09:30'
+end_time: '2017-04-08 12:30'
 location: UCL Roberts Building
 actions:
   - label: Tickets
