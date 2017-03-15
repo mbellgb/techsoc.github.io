@@ -1,8 +1,8 @@
 ---
 facebook_id: '1267565099992682'
 title: User Experience Workshop ONEm
-start_time: '2017-03-07 18:00'
-end_time: '2017-03-07 21:00'
+start_time: '2017-03-07 18:30'
+end_time: '2017-03-07 20:00'
 location: Chadwick G08
 ---
 
